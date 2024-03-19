@@ -10,6 +10,10 @@ body {
   background-repeat: no-repeat;
 }
 
+#header-mobile{
+  background-image: url(./assets/imgs/bg-movile.png);
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
