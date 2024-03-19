@@ -5,10 +5,9 @@ import AboutMeSection from "./assets/components/AboutMe";
 export default function Home() {
   return (
     <main className="">
-      
       <Banner />
 
-      <AboutMeSection />
+      {/* <AboutMeSection /> */}
     </main>
   );
 }

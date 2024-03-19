@@ -7,15 +7,15 @@ const inter = Alex_Brush({ weight: "400", subsets: ["latin"] });
 
 export default function AboutMeSection() {
   return (
-    <section className="bg-[#ffffff] w-full ">
-      <Image
+    <section className="bg-[#ffffff]">
+      {/* <Image
         src={hoja}
         width={200}
         alt="image-hoja"
-        className=" absolute ml-10"
-      />
-      <div className="w-10/12 m-auto flex flex-row py-12 items-center">
-        <p className="w-7/12 text-2xl text-center text-[#969494] uppercase">
+        className=" ml-10"
+      /> */}
+      <div className="">
+        <p className="md:w-7/12 w-full text-2xl text-center text-[#969494] uppercase">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -24,7 +24,7 @@ export default function AboutMeSection() {
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
-        <div className="w-5/12">
+        <div className=" w-full md:w-5/12">
           <h2
             className={`${inter.className} text-5xl text-center mb-2 text-[#787878]`}
           >
