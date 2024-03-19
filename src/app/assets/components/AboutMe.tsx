@@ -7,7 +7,7 @@ export default function AboutMeComponent() {
     return(
         <section>
             <h2 className={`${AlexBrush.className} text-center text-4xl mb-4 mt-4`}>Sobre mi</h2>
-            <div className="bg-[#fff] flex flex-col md:flex-row py-6">
+            <div className="bg-[#fff] flex flex-col md:flex-row py-6 md:px-12">
                 <p className="text-center text-xl md:text-2xl w-10/12 md:w-7/12 m-auto">
                     Soy Andrea Namaste, terapeuta holística y profesora de yoga. 
                     Mi misión es acompañarte en tu proceso de sanación y transformación personal, 
