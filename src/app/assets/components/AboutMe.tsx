@@ -16,13 +16,13 @@ export default function AboutMeSection() {
       />
       <div className="w-10/12 m-auto flex flex-row py-12 items-center">
         <p className="w-7/12 text-2xl text-center text-[#969494] uppercase">
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat. Duis aute irure dolor in
           reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum."
+          culpa qui officia deserunt mollit anim id est laborum.
         </p>
         <div className="w-5/12">
           <h2
