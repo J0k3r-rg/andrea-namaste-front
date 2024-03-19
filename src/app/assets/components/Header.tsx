@@ -46,7 +46,7 @@ export default function Header() {
         <MdMoreHoriz className="text-[#787878] w-8"/>
       </div>
       <div className={`absolute md:hidden top-0 ${show ? 'right-0' : 'right-[-100%]'} h-screen w-screen md:hidden  transition-all duration-300`} id="header-mobile">
-        <p onClick={() => setShow(false)} className="px-5 text-6xl">x</p>
+        <p onClick={() => setShow(false)} className="px-5 text-6xl cursor-pointer">x</p>
       </div>
     </header>
   );

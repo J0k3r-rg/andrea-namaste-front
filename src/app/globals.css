@@ -5,13 +5,15 @@
 
 body {
   width: 100%;
-  background-image: url('./assets/imgs/background.png');
+  background-image: url('./assets/imgs/background-min.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 #header-mobile{
   background-image: url(./assets/imgs/bg-movile.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 @layer utilities {
