@@ -1,42 +1,21 @@
 import Image from "next/image";
-import { Alex_Brush } from "next/font/google";
-import hoja from "@/app/assets/imgs/hoja-dorada.png";
-import meAbout from "@/app/assets/imgs/me-about.png";
+import { AlexBrush } from "@/app/assets/fonts/AlexBrush";
+import about from "@/app/assets/imgs/me-about.png";
 
-const inter = Alex_Brush({ weight: "400", subsets: ["latin"] });
-
-export default function AboutMeSection() {
-  return (
-    <section className="bg-[#ffffff]">
-      {/* <Image
-        src={hoja}
-        width={200}
-        alt="image-hoja"
-        className=" ml-10"
-      /> */}
-      <div className="">
-        <p className="md:w-7/12 w-full text-2xl text-center text-[#969494] uppercase">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <div className=" w-full md:w-5/12">
-          <h2
-            className={`${inter.className} text-5xl text-center mb-2 text-[#787878]`}
-          >
-            Sobre mi
-          </h2>
-          <Image
-            src={meAbout}
-            alt="image-me-about"
-            className="w-[90%] m-auto"
-          />
-        </div>
-      </div>
-    </section>
-  );
+export default function AboutMeComponent() {
+    
+    return(
+        <section>
+            <h2 className={`${AlexBrush.className} text-center text-4xl mb-4 mt-4`}>Sobre mi</h2>
+            <div className="bg-[#fff] flex flex-col md:flex-row py-6">
+                <p className="text-center text-xl md:text-2xl w-10/12 md:w-7/12 m-auto">
+                    Soy Andrea Namaste, terapeuta holística y profesora de yoga. 
+                    Mi misión es acompañarte en tu proceso de sanación y transformación personal, 
+                    para que puedas conectar con tu esencia y vivir en armonía con tu cuerpo, 
+                    mente y espíritu.
+                </p>
+                <Image src={about} alt="about me" className="md:w-4/12 w-10/12 m-auto"/>
+            </div>
+        </section>
+    );
 }

@@ -3,12 +3,11 @@ import { useState } from "react";
 import whatsapp from "@/app/assets/imgs/whatsapp.png";
 import instagram from "@/app/assets/imgs/instagram.png";
 import logo from "@/app/assets/imgs/logo.png";
-import { Alex_Brush } from "next/font/google";
+import { AlexBrush } from "../fonts/AlexBrush";
 import { MdMoreHoriz } from "react-icons/md";
 import Link from "next/link";
 import Image from "next/image";
 
-const inter = Alex_Brush({ weight: "400", subsets: ["latin"] });
 
 export default function Header() {
   const [show, setShow] = useState(false);
@@ -20,7 +19,7 @@ export default function Header() {
   return (
     <>
       <header
-        className={`${inter.className} flex flex-row md:justify-between w-11/12 m-auto h-24 items-center`}
+        className={`${AlexBrush.className} flex flex-row md:justify-between w-11/12 m-auto h-24 items-center`}
       >
         <ul
           className={`text-3xl text-[#787878] hidden md:flex flex-row gap-20`}
@@ -77,7 +76,7 @@ export default function Header() {
         </div>
         <div className="h-full mt-20">
           <ul
-            className={`${inter.className} text-5xl text-[#787878] md:hidden flex flex-col gap-10 text-center`}
+            className={`${AlexBrush.className} text-3xl text-[#787878] md:hidden flex flex-col gap-10 text-center`}
           >
             <li>
               <Link onClick={changeShow} href={`#`}>Inicio</Link>
