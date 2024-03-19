@@ -13,6 +13,10 @@ const inter = Alex_Brush({ weight: "400", subsets: ["latin"] });
 export default function Header() {
   const [show, setShow] = useState(false);
 
+  const changeShow = () => {
+    setShow(!show);
+  }
+
   return (
     <>
       <header
@@ -48,7 +52,7 @@ export default function Header() {
           </li>
         </ul>
         <div
-          onClick={() => setShow(true)}
+          onClick={changeShow}
           className="md:hidden absolute right-10 justify-self-end bg-[#DCC361] bg-opacity-40 px-3 py-1 text-2xl rounded-2xl cursor-pointer"
         >
           <MdMoreHoriz className="text-[#787878] w-8" />
@@ -65,7 +69,7 @@ export default function Header() {
             <Image alt="logo" src={logo} width={150} />
           </div>
           <div
-            onClick={() => setShow(false)}
+            onClick={changeShow}
             className="md:hidden absolute right-10 bg-[#DCC361] bg-opacity-40 px-3 py-1 text-2xl rounded-2xl cursor-pointer"
           >
             <MdMoreHoriz className="text-[#787878] w-8" />
@@ -73,19 +77,19 @@ export default function Header() {
         </div>
         <div className="h-full mt-20">
           <ul
-            className={`${inter.className} text-5xl text-[#787878] font-bold md:hidden flex flex-col gap-10 text-center`}
+            className={`${inter.className} text-5xl text-[#787878] md:hidden flex flex-col gap-10 text-center`}
           >
             <li>
-              <Link href={`#`}>Inicio</Link>
+              <Link onClick={changeShow} href={`#`}>Inicio</Link>
             </li>
             <li>
-              <Link href={`#`}>Sobre mi</Link>
+              <Link onClick={changeShow} href={`#`}>Sobre mi</Link>
             </li>
             <li>
-              <Link href={`#`}>Mis Servicios</Link>
+              <Link onClick={changeShow} href={`#`}>Mis Servicios</Link>
             </li>
             <li>
-              <Link href={`#`}>Contacto</Link>
+              <Link onClick={changeShow} href={`#`}>Contacto</Link>
             </li>
           </ul>
         </div>
