@@ -1,9 +1,9 @@
-import sanacionPranica from '@/app/assets/imgs/sanacion-pranica.png';
-import mesaRadionica from '@/app/assets/imgs/mesa-radionica.png';
-import penduloEbreoOrgon from '@/app/assets/imgs/pendulo-ebreo-orgon.png';
-import decodificacionArquetipal from '@/app/assets/imgs/decodificacion-arquetipal.png';
-import fengShui from '@/app/assets/imgs/feng-shui.png';
-import manos from '@/app/assets/imgs/manos.png';
+import sanacionPranica from '@/app/assets/imgs/sanacion-pranica.jpg';
+import mesaRadionica from '@/app/assets/imgs/mesa-radionica.jpg';
+import penduloEbreoOrgon from '@/app/assets/imgs/pendulo-ebreo-orgon.jpg';
+import decodificacionArquetipal from '@/app/assets/imgs/decodificacion-arquetipal.jpg';
+import fengShui from '@/app/assets/imgs/feng-shui.jpg';
+import manos from '@/app/assets/imgs/manos.jpg';
 
 export const services = [
     {
