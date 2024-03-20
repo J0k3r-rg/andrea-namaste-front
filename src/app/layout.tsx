@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { alegreya } from "./assets/fonts/AlegreyaSansSc";
 import "./globals.css";
 import Header from "./assets/components/Header";
+import Footer from "./assets/components/Footer";
 
 
 export const metadata: Metadata = {
@@ -19,6 +20,7 @@ export default function RootLayout({
       <body className={`${alegreya.className}`}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
