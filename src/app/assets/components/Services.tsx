@@ -2,6 +2,7 @@ import { services } from "@/app/data/services";
 import CardService from "./CardServiceComponent";
 import { AlexBrush } from "../fonts/AlexBrush";
 import Carrousel from "./Carrousel";
+import { Suspense } from "react";
 
 export default function Services() {
     return(
@@ -10,7 +11,9 @@ export default function Services() {
             <div className="md:grid md:grid-cols-3 gap-8 hidden">
                 {
                     services.map((service, index) => 
-                        <CardService key={index} item={service} />
+                        <Suspense key={index} fallback={<div className="w-full h-full bg-black bg-opacity-30 grid place-content-center">Cargando...</div>}>
+                            <CardService key={index} item={service} />
+                        </Suspense>
                     )
                 }
             </div>
