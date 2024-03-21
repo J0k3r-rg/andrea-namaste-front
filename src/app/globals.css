@@ -5,13 +5,13 @@
 
 body {
   width: 100%;
-  background-image: url('./assets/imgs/background-min.jpg');
+  background-image: url('./UI/assets/imgs/background-min.jpg');
   background-attachment: fixed;
   background-size: contain;
 }
 
 #header-mobile{
-  background-image: url(./assets/imgs/bg-movile.png);
+  background-image: url('./UI/assets/imgs/bg-movile.png');
   background-attachment: fixed;
   background-size: contain;
 }

@@ -1,5 +1,5 @@
 import Image from "next/image"
-import logo from '@/app/assets/imgs/logo.png';
+import logo from '@/app/UI/assets/imgs/logo.png';
 
 export default function Banner() {
     return(

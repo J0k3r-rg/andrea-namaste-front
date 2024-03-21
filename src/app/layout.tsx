@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { alegreya } from "./assets/fonts/AlegreyaSansSc";
+import { alegreya } from '@/app/UI/fonts/AlegreyaSansSc';
 import "./globals.css";
-import Header from "./assets/components/Header";
-import Footer from "./assets/components/Footer";
+import Header from '@/app//UI/components/Header';
+import Footer from '@/app/UI/components/Footer';
 
 
 export const metadata: Metadata = {

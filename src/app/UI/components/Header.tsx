@@ -1,9 +1,9 @@
 "use client";
 import { useState } from "react";
-import whatsapp from "@/app/assets/imgs/whatsapp.png";
-import instagram from "@/app/assets/imgs/instagram.png";
-import logo from "@/app/assets/imgs/logo.png";
-import { AlexBrush } from "../fonts/AlexBrush";
+import whatsapp from '@/app/UI/assets/imgs/whatsapp.png';
+import instagram from '@/app/UI/assets/imgs/instagram.png';
+import logo from '@/app/UI/assets/imgs/logo.png';
+import { AlexBrush } from "@/app/UI/fonts/AlexBrush";
 import { MdMoreHoriz } from "react-icons/md";
 import Link from "next/link";
 import Image from "next/image";
@@ -25,13 +25,13 @@ export default function Header() {
           className={`text-3xl text-[#787878] hidden md:flex flex-row gap-20`}
         >
           <li>
-            <Link href={`#`}>Inicio</Link>
+            <Link href={`/`}>Inicio</Link>
           </li>
           <li>
-            <Link href={`#`}>Sobre mi</Link>
+            <Link href={`/pages/about_me`}>Sobre mi</Link>
           </li>
           <li>
-            <Link href={`#`}>Mis Servicios</Link>
+            <Link href={`/pages/services`}>Mis Servicios</Link>
           </li>
         </ul>
 
@@ -47,7 +47,7 @@ export default function Header() {
             </Link>
           </li>
           <li>
-            <Link href={`#`}>Contacto</Link>
+            <Link href={`/pages/contact`}>Contacto</Link>
           </li>
         </ul>
         <div
@@ -79,16 +79,16 @@ export default function Header() {
             className={`${AlexBrush.className} text-3xl text-[#787878] md:hidden flex flex-col gap-10 text-center`}
           >
             <li>
-              <Link onClick={changeShow} href={`#`}>Inicio</Link>
+              <Link onClick={changeShow} href={`/`}>Inicio</Link>
             </li>
             <li>
-              <Link onClick={changeShow} href={`#`}>Sobre mi</Link>
+              <Link onClick={changeShow} href={`/pages/about_me`}>Sobre mi</Link>
             </li>
             <li>
-              <Link onClick={changeShow} href={`#`}>Mis Servicios</Link>
+              <Link onClick={changeShow} href={`/pages/services`}>Mis Servicios</Link>
             </li>
             <li>
-              <Link onClick={changeShow} href={`#`}>Contacto</Link>
+              <Link onClick={changeShow} href={`/pages/contact`}>Contacto</Link>
             </li>
           </ul>
         </div>

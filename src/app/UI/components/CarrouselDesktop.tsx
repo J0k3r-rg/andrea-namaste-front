@@ -1,7 +1,7 @@
 'use client';
 import { useState } from "react";
-import { services } from "@/app/data/services";
-import CardService from "./CardServiceComponent";
+import { services } from '@/app/UI/data/services';
+import CardService from '@/app/UI/components/CardServiceComponent';
 import { MdNavigateBefore, MdNavigateNext } from "react-icons/md";
 
 export default function CarrouselDesktop() {

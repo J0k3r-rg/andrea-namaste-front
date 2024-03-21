@@ -1,6 +1,6 @@
-import { AlexBrush } from "../fonts/AlexBrush";
-import Carrousel from "./Carrousel";
-import CarrouselDesktop from "./CarrouselDesktop";
+import { AlexBrush } from '@/app/UI/fonts/AlexBrush';
+import Carrousel from '@/app/UI/components/Carrousel';
+import CarrouselDesktop from '@/app/UI/components/CarrouselDesktop';
 
 export default function Services() {
     return (

@@ -1,7 +1,7 @@
-import AboutMeComponent from "./assets/components/AboutMe";
-import Banner from "./assets/components/Banner";
-import Services from "./assets/components/Services";
-import Testimonio from "./assets/components/Testimonio";
+import Banner from '@/app/UI/components/Banner';
+import AboutMeComponent from '@/app/UI/components/AboutMe';
+import Services from '@/app/UI/components/Services';
+import Testimonio from '@/app/UI/components/Testimonio';
 
 export default function Home() {
   return (

@@ -1,5 +1,5 @@
-import { ServiceType } from "@/app/data/types";
-import Image, { StaticImageData } from "next/image";
+import { ServiceType } from '@/app/UI/data/types';
+import Image from 'next/image';
 
 
 export default function CardService({item, className} : {item : ServiceType, className? : string}) {

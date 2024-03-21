@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { AlexBrush } from "@/app/assets/fonts/AlexBrush";
-import about from "@/app/assets/imgs/me-about.jpg";
+import { AlexBrush } from "@/app/UI/fonts/AlexBrush";
+import about from "@/app/UI/assets/imgs/me-about.jpg";
 
 export default function AboutMeComponent() {
     

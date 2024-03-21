@@ -1,6 +1,6 @@
-import mandala from '@/app/assets/imgs/mandala.png';
+import mandala from '@/app/UI/assets/imgs/mandala.png';
 import Image from 'next/image';
-import { AlexBrush } from '../fonts/AlexBrush';
+import { AlexBrush } from '@/app/UI/fonts/AlexBrush';
 
 export default function Testimonio() {
 
