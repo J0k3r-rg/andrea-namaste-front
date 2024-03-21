@@ -10,7 +10,7 @@ export default function ContactComponent() {
             <div className="relative flex justify-center">
                 <Image src={mancha} alt="mancha" className="opacity-25 absolute md:w-8/12 lg:w-5/12 mt-20 md:mt-14 lg:mt-2" />
             </div>
-            <h2 className={`${AlexBrush.className} text-4xl text-right text-[#E0C043]`}>Contactanos</h2>
+            <h2 className={`${AlexBrush.className} text-5xl text-right text-[#E0C043]`}>Contacto</h2>
             <div className="text-[#969494] text-2xl mt-14">
                 <p>Estas interesado en adquirir algunos de mis</p> <p> servicios</p>
                 <p>Escribime y coordinamos una cita </p> <p>precencial o virtual</p>
