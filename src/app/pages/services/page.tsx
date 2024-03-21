@@ -1,10 +1,11 @@
+import { AlexBrush } from "@/app/UI/fonts/AlexBrush";
 
 
 export default function ServicesPage() {
     return(
         <main className="grid place-content-center text-center">
-            <h2>Services</h2>
-            <h2>Page in Progress</h2>
+            <h2 className={`${AlexBrush.className} font-bold text-6xl text-[#E0C043]`}>My services</h2>
+            <h2 className="text-4xl">Page in Progress</h2>
         </main>
     );
 }

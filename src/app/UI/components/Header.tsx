@@ -24,30 +24,30 @@ export default function Header() {
         <ul
           className={`text-3xl text-[#787878] hidden md:flex flex-row gap-20`}
         >
-          <li>
-            <Link href={`/`}>Inicio</Link>
+          <li className="hover:scale-110 transition-all duration-300 ease-in-out">
+            <Link href={`/`} className="hover:text-[#E0C043]">Inicio</Link>
           </li>
-          <li>
-            <Link href={`/pages/about_me`}>Sobre mi</Link>
+          <li className="hover:scale-110 transition-all duration-300 ease-in-out">
+            <Link href={`/pages/about_me`} className="hover:text-[#E0C043]">Sobre mi</Link>
           </li>
-          <li>
-            <Link href={`/pages/services`}>Mis Servicios</Link>
+          <li className="hover:scale-110 transition-all duration-300 ease-in-out">
+            <Link href={`/pages/services`} className="hover:text-[#E0C043]">Mis Servicios</Link>
           </li>
         </ul>
 
         <ul className="text-3xl text-[#ca8c8c] hidden lg:flex flex-row gap-6">
           <li>
             <Link href={`#`}>
-              <Image alt="whatsapp" src={whatsapp} width={35} />
+              <Image alt="whatsapp" src={whatsapp} width={35}  className="hover:scale-110 transition-all duration-300 ease-in-out"/>
             </Link>
           </li>
           <li>
             <Link href={`#`}>
-              <Image alt="whatsapp" src={instagram} width={40} />
+              <Image alt="whatsapp" src={instagram} width={40} className="hover:scale-110 transition-all duration-300 ease-in-out"/>
             </Link>
           </li>
-          <li>
-            <Link href={`/pages/contact`}>Contacto</Link>
+          <li className="hover:scale-110 transition-all duration-300 ease-in-out">
+            <Link href={`/pages/contact`} className="hover:text-[#E0C043] transition-all duration-300 ease-in-out">Contacto</Link>
           </li>
         </ul>
         <div
