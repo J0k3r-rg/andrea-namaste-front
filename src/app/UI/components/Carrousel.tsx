@@ -23,10 +23,10 @@ export default function Carrousel() {
     };
 
     return (
-        <div className="md:hidden flex flex-row items-center">
-            <div>
+        <div className="md:hidden flex flex-row items-center relative">
+            <div className='absolute'>
                 <MdNavigateBefore
-                    className="text-6xl text-[#969494] cursor-pointer"
+                    className="text-6xl text-[#E0C043] cursor-pointer"
                     onClick={prev}
                 />
             </div>
@@ -39,9 +39,9 @@ export default function Carrousel() {
                     />
                 ))}
             </div>
-            <div>
+            <div className='absolute right-0'>
                 <MdNavigateNext
-                    className="text-6xl text-[#969494] cursor-pointer"
+                    className="text-6xl text-[#E0C043] cursor-pointer"
                     onClick={next}
                 />
             </div>

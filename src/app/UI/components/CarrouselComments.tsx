@@ -1,19 +1,21 @@
-'use client'
+'use client';
 import { comments } from '@/app/UI/data/comments';
 import CommentHome from './CommentHome';
 import { useState } from 'react';
 import { MdNavigateBefore, MdNavigateNext } from 'react-icons/md';
+
+
 export default function CarrouselComments() {
 
     const [current, setCurrent] = useState(0);
 
     const next = () => {
         setCurrent(current === comments.length - 1 ? 0 : current + 1);
-    }
+    };
 
     const prev = () => {
         setCurrent(current === 0 ? comments.length - 1 : current - 1);
-    }
+    };
 
     return (
         <div className='flex flex-row items-center relative'>
@@ -23,7 +25,7 @@ export default function CarrouselComments() {
                     onClick={prev}
                 />
             </div>
-            <div className='uppercase bg-[#D9D9D9] bg-opacity-50 flex flex-col gap-4 py-8 text-center px-4 lg:px-36 md:px-14'>
+            <div className='uppercase bg-[#D9D9D9] bg-opacity-50 flex flex-col gap-4 py-8 text-center px-10 lg:px-36 md:px-14'>
                 {
                     comments.map((comment, index) => 
                         <CommentHome key={index} item={comment} hidden={current != index ? 'hidden' : ''}/>
@@ -37,5 +39,5 @@ export default function CarrouselComments() {
                 />
             </div>
         </div>
-    )
+    );
 }
