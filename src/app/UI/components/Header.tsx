@@ -60,7 +60,7 @@ export default function Header() {
       <div
         className={`fixed md:hidden top-0 w-screen ${
           show ? "right-0" : "right-[-100%]"
-        } h-screen md:hidden transition-all duration-300`}
+        } h-screen md:hidden transition-all duration-300 z-20`}
         id="header-mobile"
       >
         <div className="flex flex-row justify-between items-center px-4 py-2">
